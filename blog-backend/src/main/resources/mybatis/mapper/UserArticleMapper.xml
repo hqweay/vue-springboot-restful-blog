@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.UserArticleMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.UserArticle">
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.entity.UserArticle">
+    insert into user_article (user_email, article_id)
+    values (#{userEmail,jdbcType=VARCHAR}, #{articleId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.UserArticle">
+    insert into user_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        user_email,
+      </if>
+      <if test="articleId != null">
+        article_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.example.entity.UserArticle">
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.entity.UserArticle">
+    insert into user_article (user_email, article_id)
+    values (#{userEmail,jdbcType=VARCHAR}, #{articleId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.UserArticle">
+    insert into user_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        user_email,
+      </if>
+      <if test="articleId != null">
+        article_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.example.entity.UserArticle">
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.entity.UserArticle">
+    insert into user_article (user_email, article_id)
+    values (#{userEmail,jdbcType=VARCHAR}, #{articleId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.UserArticle">
+    insert into user_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        user_email,
+      </if>
+      <if test="articleId != null">
+        article_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.example.entity.UserArticle">
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.entity.UserArticle">
+    insert into user_article (user_email, article_id)
+    values (#{userEmail,jdbcType=VARCHAR}, #{articleId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.entity.UserArticle">
+    insert into user_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        user_email,
+      </if>
+      <if test="articleId != null">
+        article_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userEmail != null">
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+</mapper>
